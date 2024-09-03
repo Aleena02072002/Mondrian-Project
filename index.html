@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container {
+      display: grid;
+      background-color: black;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px auto;
+      grid-template-rows: 414px auto;
+      gap: 9px ;
+      
+    }
+
+    .ar-1{
+      background-color: #E72F24;
+    }
+
+    .ar-2 {
+      background-color: #F0F1EC;
+    }
+    .ar-3 {
+      display: grid;
+      gap: 9px;
+      grid-template-rows: 295px auto;
+      
+    } 
+    .ar-3-1 {
+      background-color: #F0F1EC;
+    }
+    .ar-3-2{
+      background-color: #F0F1EC;
+    }
+
+    .ar-4 {
+      display: grid;
+      gap: 9px;
+      grid-template-columns: auto 50px;
+      
+    }
+    .ar-4-1 {
+      display: grid;
+      gap:9px;
+      grid-template-rows: auto 20px;
+      
+    }
+    .ar-4-1-1{
+      background-color: #F0F1EC;
+    }
+
+    .ar-4-1-2 {
+      display: grid;
+      gap: 9px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .ar-4-1-2-1 {
+      background-color: #F9D01E;
+    }
+    .ar-4-1-2-2 {
+      background-color: black;
+    }
+
+    .ar-4-2{
+      display: grid;
+      gap: 9px;
+      grid-template-rows: 130px auto;
+    }
+
+    .ar-4-2-1{
+      background-color: #004592;
+      margin-bottom: 10px;
+    }
+    .ar-4-2-2{
+      background-color: #F0F1EC;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+<div class="container">
+<div class="ar-1"></div>
+<div class="ar-2"></div>
+<div class="ar-3">
+  <div class="ar-3-1"></div>
+  <div class="ar-3-2"></div>
+</div>
+<div class="ar-4">
+  <div class="ar-4-1">
+    <div class="ar-4-1-1"></div>
+    <div class="ar-4-1-2">
+      <div class="ar-4-1-2-1"></div>
+      <div class="ar-4-1-2-2"></div>
+    </div>
+  </div>
+  <div class="ar-4-2">
+    <div class="ar-4-2-1"></div>
+    <div class="ar-4-2-2"></div>
+  </div>
+</div>
+
+
+
+</div>
+
+</body>
+
+</html>
